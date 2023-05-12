@@ -6,9 +6,7 @@
   "scripts": {
     "generate:version": "tsx src/generate-version"
   },
-  "pre-push": [
-    "generate:version"
-  ],
+  "prepush": "generate:version",
   "devDependencies": {
     "@types/node": "^20.1.3",
     "pre-push": "^0.1.4",

@@ -67,8 +67,6 @@ const normalizedVersion = `${newVersion.major}.${newVersion.minor}.${newVersion.
 /**
  * Generate new version.
  */
-execSync(
-  `yarn version --new-version ${normalizedVersion} && git push origin master --no-verify`
-)
+execSync(`yarn version --new-version ${normalizedVersion}`)
 
 console.log(`Nova versão: ${normalizedVersion}`)

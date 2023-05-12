@@ -65,4 +65,4 @@ const normalizedVersion = `${newVersion.major}.${newVersion.minor}.${newVersion.
 /**
  * Generate new version.
  */
-execSync(`git version --new-version ${normalizedVersion}`)
+execSync(`yarn version --new-version ${normalizedVersion}`)

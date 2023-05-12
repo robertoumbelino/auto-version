@@ -72,9 +72,7 @@ if (packageJson.version !== normalizedVersion) {
    * Generate new version.
    */
   execSync(`yarn version --new-version ${normalizedVersion}`)
-  const responseDale = execSync('git fetch')
-  console.log({ abc: responseDale.toString() })
-  execSync('git push origin HEAD:master --no-verify')
+  // execSync('git push origin HEAD:master --no-verify')
 
   console.log(`Nova versão gerada: ${normalizedVersion}`)
 }

@@ -1,6 +1,6 @@
 {
   "name": "auto-version",
-  "version": "1.2.0",
+  "version": "1.10.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

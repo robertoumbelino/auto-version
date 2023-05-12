@@ -74,5 +74,5 @@ if (packageJson.version !== normalizedVersion) {
   execSync(`yarn version --new-version ${normalizedVersion}`)
   execSync('git push origin master --no-verify')
 
-  console.log(`Nova versão gerada: ${normalizedVersion}`)
+  console.log(`Nova versão: ${normalizedVersion}`)
 }

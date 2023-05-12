@@ -1,6 +1,8 @@
 import packageJson from '../package.json'
 import { execSync } from 'child_process'
 
+console.log('Gerando nova versão')
+
 /**
  * Get not pushed commits.
  */
@@ -66,3 +68,5 @@ const normalizedVersion = `${newVersion.major}.${newVersion.minor}.${newVersion.
  * Generate new version.
  */
 execSync(`yarn version --new-version ${normalizedVersion}`)
+
+console.log('Nova versão gerada')

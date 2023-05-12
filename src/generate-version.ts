@@ -65,8 +65,13 @@ const newVersion = response
 const normalizedVersion = `${newVersion.major}.${newVersion.minor}.${newVersion.patch}`
 
 /**
- * Generate new version.
+ * Ignore version.
  */
-execSync(`yarn version --new-version ${normalizedVersion}`)
+if (packageJson.version !== normalizedVersion) {
+  /**
+   * Generate new version.
+   */
+  execSync(`yarn version --new-version ${normalizedVersion}`)
 
-console.log(`Nova versão: ${normalizedVersion}`)
+  console.log(`Nova versão: ${normalizedVersion}`)
+}

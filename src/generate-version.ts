@@ -1,7 +1,7 @@
 import packageJson from '../package.json'
 import { execSync } from 'child_process'
 
-console.log('Gerando nova versão')
+console.log(`Versão atual: ${packageJson.version}`)
 
 /**
  * Get not pushed commits.

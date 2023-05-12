@@ -69,4 +69,4 @@ const normalizedVersion = `${newVersion.major}.${newVersion.minor}.${newVersion.
  */
 execSync(`yarn version --new-version ${normalizedVersion}`)
 
-console.log(`Nova versão: ${normalizedVersion}`)
+console.log(`Nova versão gerada: ${normalizedVersion}`)

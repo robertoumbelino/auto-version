@@ -73,5 +73,5 @@ if (packageJson.version !== normalizedVersion) {
    */
   execSync(`yarn version --new-version ${normalizedVersion}`)
 
-  console.log(`Nova versão: ${normalizedVersion}`)
+  console.log(`Nova versão gerada: ${normalizedVersion}`)
 }
